@@ -1,0 +1,13 @@
+name: voting-app
+services:
+  vote:
+    public: true
+    image: jaskon139/oktetofortest
+    build: vote
+    replicas: 1
+    ports:
+      - 80
+    resources:
+      cpu: 100m
+      memory: 1024Mi
+
